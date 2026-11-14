@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"ex 10a\startup_stm32f103xb.o"
+"ex 10a\main.o"
+"ex 10a\stm32f1xx_it.o"
+"ex 10a\stm32f1xx_hal_msp.o"
+"ex 10a\stm32f1xx_hal_gpio_ex.o"
+"ex 10a\stm32f1xx_hal_uart.o"
+"ex 10a\stm32f1xx_hal.o"
+"ex 10a\stm32f1xx_hal_rcc.o"
+"ex 10a\stm32f1xx_hal_rcc_ex.o"
+"ex 10a\stm32f1xx_hal_gpio.o"
+"ex 10a\stm32f1xx_hal_dma.o"
+"ex 10a\stm32f1xx_hal_cortex.o"
+"ex 10a\stm32f1xx_hal_pwr.o"
+"ex 10a\stm32f1xx_hal_flash.o"
+"ex 10a\stm32f1xx_hal_flash_ex.o"
+"ex 10a\stm32f1xx_hal_exti.o"
+"ex 10a\system_stm32f1xx.o"
+--strict --scatter "EX 10A\EX 10A.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "EX 10A.map" -o "EX 10A\EX 10A.axf"
